@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import imgSrc from "./image/hackImg1.jpeg";
 import "./App.css";
+import { Spinner } from "flowbite-react";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -25,7 +26,13 @@ function App() {
                 className='btn'
                 onClick={() => setLoading(true)}
                 disabled={loading}>
-                {loading ? <span>Checking...</span> : "Check"}
+                {loading ? (
+                  <>
+                    <span>Checking...</span>
+                  </>
+                ) : (
+                  "Check"
+                )}
               </button>
             </div>
           </form>

@@ -63,6 +63,11 @@ form p {
   font-size: 16px;
   font-weight: 600;
 }
+.spinner {
+  width: 15px;
+  height: 15px;
+  color: #fff;
+}
 input {
   width: 50%;
   /* height: 38px; */
